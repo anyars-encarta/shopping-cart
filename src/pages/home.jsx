@@ -53,7 +53,7 @@ const Home = () => {
                   {
                         products && products.length
                           ? products.map((productItem) => (
-                            <ProductTile product={productItem} />
+                            <ProductTile product={productItem} key={productItem.id} />
                           ))
                           : null
                     }

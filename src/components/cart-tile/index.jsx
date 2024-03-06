@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import { removeFromCart } from '../../store/slices/card-slice';
 
 const CartTile = ({ cartItem }) => {
@@ -30,6 +31,10 @@ const CartTile = ({ cartItem }) => {
       </div>
     </>
   );
+};
+
+CartTile.propTypes = {
+  cartItem: PropTypes.string.isRequired,
 };
 
 export default CartTile;

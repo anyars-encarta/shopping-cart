@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import { addToCart, removeFromCart } from '../../store/slices/card-slice';
 
 const ProductTile = ({ product }) => {
@@ -31,17 +32,23 @@ const ProductTile = ({ product }) => {
         <div className="flex items-center justify-center w-full mt-5">
           <button
             type="button"
-            onClick={cart.some((item) => item.id === product.id) ? handleRemoveFromCart : handleAddToCart}
+            onClick={cart.some((item) => item.id === product.id)
+              ? handleRemoveFromCart
+              : handleAddToCart}
             className="bg-red-950 text-white border-2 rounded-lg font-bold p-4"
           >
             {
-                            cart.some((item) => item.id === product.id) ? 'Remove from Cart' : 'Add to Cart'
-                        }
+              cart.some((item) => item.id === product.id) ? 'Remove from Cart' : 'Add to Cart'
+            }
           </button>
         </div>
       </div>
     </div>
   );
+};
+
+ProductTile.propTypes = {
+  product: PropTypes.string.isRequired,
 };
 
 export default ProductTile;
