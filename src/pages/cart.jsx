@@ -12,7 +12,7 @@ const Cart = () => {
   }, [cart]);
 
   return (
-    <div className="flex justify-center max-w-6xl mx-auto">
+    <div className="flex justify-center max-w-6xl mx-auto mt-10">
       {
         cart && cart.length
           ? (
