@@ -19,7 +19,7 @@ const CartTile = ({ cartItem }) => {
             <p className="text-white font-extrabold">
               Price:
               {' '}
-              {' '}
+              {' $'}
               {cartItem?.price}
             </p>
           </div>

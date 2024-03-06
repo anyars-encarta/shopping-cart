@@ -46,7 +46,7 @@ const Cart = () => {
                     <span>
                       :
                       {' '}
-                      {' '}
+                      {' $'}
                       {totalCart}
                     </span>
                   </p>
