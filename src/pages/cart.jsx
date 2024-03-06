@@ -35,14 +35,18 @@ const Cart = () => {
                   <p>
                     <span className="text-gray-800 font-bold">Total Items</span>
                     <span>
-                      : {' '}
+                      :
+                      {' '}
+                      {' '}
                       {cart.length}
                     </span>
                   </p>
                   <p>
                     <span className="text-gray-800 font-bold">Total Amount</span>
                     <span>
-                      : {' '}
+                      :
+                      {' '}
+                      {' '}
                       {totalCart}
                     </span>
                   </p>

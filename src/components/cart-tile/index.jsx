@@ -16,7 +16,12 @@ const CartTile = ({ cartItem }) => {
           <img src={cartItem?.image} alt={cartItem?.title} className="h-28 w-28 rounded-lg" />
           <div className="ml-10 self-start space-y-5">
             <h1 className="text-xl text-white font-bold">{cartItem?.title}</h1>
-            <p className="text-white font-extrabold">Price: {' '} {cartItem?.price}</p>
+            <p className="text-white font-extrabold">
+              Price:
+              {' '}
+              {' '}
+              {cartItem?.price}
+            </p>
           </div>
         </div>
         <div>
